@@ -1,0 +1,16 @@
+/*-- Color Scheme --*/
+$mainBlue: #2f5572;
+$mainOrange: #d59541;
+$pureWhite: #ffffff;
+$pureBlack: #333;
+
+/*-- Font Weight --*/
+$font-weight-light: 200;
+$font-weight-medium: 500;
+$font-weight-heavy: 700;
+
+/*-- Font Color --*/
+
+$title-color: $pureBlack;
+$subtitle-color: lighten($pureBlack, 10%);
+$text-color: lighten($pureBlack, 20%);
