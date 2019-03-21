@@ -2,4 +2,16 @@
 @import "./sass/base/_variables";
 @import "./sass/base/_global";
 
-@import "./sass/modules/_navbar";
+@import "./sass/modules/navigation";
+@import "./sass/modules/home-section";
+//@import "./sass/modules/home-section-comm";
+@import "./sass/modules/what-we-do";
+@import "./sass/modules/about";
+//@import "./sass/modules/about-comm";
+@import "./sass/modules/booking";
+@import "./sass/modules/testimonials";
+@import "./sass/modules/cta";
+@import "./sass/modules/footer";
+@import "./sass/modules/modal";
+//@import "./sass/modules/job-application";
+@import "~bootstrap/scss/bootstrap";

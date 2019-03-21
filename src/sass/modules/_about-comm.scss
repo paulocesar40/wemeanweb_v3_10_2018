@@ -1,0 +1,68 @@
+/* About With Lazyload & JS Parallax */
+
+#about-comm {
+    &.lazyloaded {
+      background: url('./images/iStock-623768412.jpg') center center no-repeat;
+      background-size: cover;
+      height: 700px;
+      /* other items */
+      height: 100%;
+      width: 100%;
+      padding-top: 4em;
+      padding-bottom: 2rem;
+      color: #FFF;
+    }
+  
+    @media (min-width : 768px) 
+    and (max-width : 1024px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+      &.lazyloaded {
+        background: url('./images/iStock-623768412.jpg') center center no-repeat;
+        background-size: cover;
+        height: 850px;
+        padding-top: 1em;
+      } 
+    }
+  
+    @media (min-width: 1025px) {
+      &.lazyloaded {
+        //background: url('../img/couple-at-kitchen-l-2313x1301px-300-dpi-iS-624490972.jpg') center no-repeat;
+        background: url('./images/iStock-623768412.jpg') 50% 0 repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 850px;
+      } 
+    }
+  
+    .inner-about {
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      background-color: $dark-overlay;
+      border-radius: 4px;
+      line-height: 1.5rem;
+      h3 {
+        color: $title-color-light;
+      }
+      h5{
+        color: $subtitle-color-light;
+        padding-top: 20px;
+        text-transform: uppercase;
+      }
+      h6{
+        color: $subtitle-color-light;
+        text-transform: uppercase;
+        line-height: 1.5em;
+      }
+
+      p{
+        color: $text-color-light;
+      }
+
+      li {
+        color: #FFF;
+      }
+      color: green;
+    }
+    
+  }

@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,400");
 
+$dark-overlay: rgba(0, 0, 0, 0.5);
+$cta-overlay: rgba(255, 255, 255, 0.8);
+$font-color: rgba(255, 255, 255, 0.7);
+$electron-blue: #0984e3;
+$title-color: rgba(0, 0, 0, 0.85);
+$subtitle-color: rgba(0, 0, 0, 0.6);
+$text-color: rgba(0, 0, 0, 0.75);
+$title-color-light: rgba(255, 255, 255, 0.95);
+$subtitle-color-light: rgba(255, 255, 255, 0.7);
+$text-color-light: rgba(255, 255, 255, 0.85);
+$accent-color-1: #e17055;
+$accent-color-2: #2f5572;
+
 body {
   // -webkit-font-smoothing: antialiased;
   // text-rendering: optimizeLegibility;
@@ -9,7 +22,7 @@ body {
   color: #777;
   margin: 0;
 
-  @media (min-width: 1700px) {
+  @media (min-width: 1200px) {
     margin: 0 5%;
   }
 }
@@ -35,4 +48,14 @@ p {
 
 p a {
   font-weight: 700;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.accent {
+  font-weight: 500;
+  color: $accent-color-1;
 }

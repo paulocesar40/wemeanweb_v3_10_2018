@@ -1,0 +1,71 @@
+#cta {
+
+    &.lazyloaded {
+        background: url('./images/cleaning-bucket-s-725x837px-72dpi-iS-172999693.jpg') 50% 0;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+      }
+        // iPad size
+      @media (min-width : 768px) 
+      and (max-width : 1024px) 
+      and (orientation : landscape) 
+      and (-webkit-min-device-pixel-ratio: 2) {
+        &.lazyloaded {
+          background: url('./images/cleaning-bucket-l-2122x1415px-300dpi-iS-172999693.jpg') 50% 0 repeat;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+        } 
+      }
+        //Desktop size
+      @media (min-width: 1025px) {
+        &.lazyloaded {
+          background: url('./images/bucket-cleaning.jpg') 50% 0 repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          height: 100%;
+          width: 100%;
+        } 
+      }
+    
+    .cta-overlay {
+        background-color: $cta-overlay;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        top:0;
+        left:0;
+        width:100%;
+        min-height: 300px;
+        font-weight: 300;
+        display: flex;
+        text-align: start;
+        align-items: center;
+        h3 {
+            color: $title-color;
+            padding-bottom: 1rem;
+        }
+        h6 {
+            padding-bottom: 1rem;
+            color: $subtitle-color;
+            text-transform: uppercase;
+        }
+        p {
+            color: $text-color;
+        }
+
+        .btn-outline-dark {
+            background-color: $accent-color-1;
+            font-weight: 500;
+            color: $text-color-light;
+            border-color: $accent-color-1;
+        }
+
+        .btn-outline-dark:hover {
+            background-color: transparent;
+            color: $accent-color-1;
+            border-color: $accent-color-1; 
+        }
+    }
+}

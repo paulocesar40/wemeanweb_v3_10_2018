@@ -1,0 +1,86 @@
+#booking {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    .flex-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .row {
+            width: auto;
+        }
+    }
+    
+    .col-xs-4 {
+        flex-basis: 30%;
+    }
+    
+    .num {
+        display: table;
+        align-items: center;
+        margin: 0 .25rem 1rem 0.25rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #FFF;
+        line-height: 25px;
+        height: 110px;
+        width: 110px;
+        text-align: center;
+        background: $accent-color-1;
+        border-radius: 100%;
+
+        @media (min-width : 768px) {
+        display: table;
+        align-items: center;
+        margin: 0 1rem 2rem 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FFF;
+        line-height: 30px;
+        height: 150px;
+        width: 150px;
+        text-align: center;
+        background: $accent-color-1;
+        border-radius: 100%;
+        }
+    }
+
+    .num .num-content {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .num span {
+        display: block;
+        font-size: .8rem;
+        line-height: 12px;
+        font-weight: normal;
+
+        @media (min-width : 768px) {
+            display: block;
+            font-size: 1rem;
+            line-height: 20px;
+            font-weight: normal;
+        }
+    }
+
+    .nav-link {
+        transition: all 1s ease-in-out;
+        border: solid 1px $electron-blue;
+    }
+
+    .house {
+        border-color: $electron-blue;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .col {
+        margin: 4px;
+        border-radius: 4px;
+    }
+
+}
+

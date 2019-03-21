@@ -1,0 +1,38 @@
+.navbar {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    border-bottom: $accent-color-2 3px solid;
+    opacity: 0.8;
+
+
+    .navbar-brand {
+        font-size: 1rem;
+        margin-top: 1px;
+        text-indent: -9999px;
+    }
+
+    .logo-svg {
+        padding: -1rem 0 -1rem 0;
+        margin: -1.5rem 0 -2rem 0;
+        overflow: visible;
+    } 
+
+    .navbar-nav {
+        
+        .nav-item {
+            transition: all 3s ease-in-out;
+            .nav-link {
+                color: $text-color-light;
+            }
+        }
+        .nav-item:active,
+        .nav-item:hover,
+        .nav-item:focus {
+            //text-transform: uppercase;
+            .nav-link {
+                color: $accent-color-1;
+            }
+        }
+    }
+}
+    

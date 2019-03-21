@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "museo-sans",sans-serif;
+    //font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    //font-weight: 100;
+      //font-size: 50px;
+      //line-height: 65px;
+  }
+   
+  p, li, a {
+    font-family: "museo-sans",sans-serif;
+    //font-family: 'Noto Sans', sans-serif;
+      //font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5625rem;
+  }
+  
+  
+  .lead {
+    //color: $font-color;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }

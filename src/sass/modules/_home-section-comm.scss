@@ -1,0 +1,69 @@
+#home-section-comm {
+    background: url('./images/man-cleaning-floor.jpeg') center center no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    //color: $font-color;
+    //font-weight: 100;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  
+    @media (min-width : 768px) 
+    and (max-width : 1024px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio: 2) 
+    {
+        background: url('./images/man-cleaning-floor.jpeg') center center no-repeat;
+        background-size: cover;
+        //background-attachment: fixed;
+        height: 700px;
+    }
+  
+    @media (min-width: 1025px) {
+      background: url('./images/man-cleaning-floor.jpeg') center center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 700px;
+    }
+    
+    .dark-overlay {
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      background-color: $dark-overlay;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      min-height:700px;
+      text-align: center;
+      color: $font-color;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      
+      h1 {
+        font-weight: 300; 
+      }
+
+    }
+    
+    .btn-outline-primary {
+      color: $font-color;
+      border-color: $font-color;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: $electron-blue;
+        color: $font-color;
+        border: none;
+      }
+  
+    .btn-outline-light {
+      color: $font-color;
+      border-color: $font-color;
+    }
+  
+    .btn-outline-light:hover{
+      color: $electron-blue;
+    }
+  }
