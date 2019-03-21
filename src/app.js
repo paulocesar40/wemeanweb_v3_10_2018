@@ -1,6 +1,6 @@
 import "./app.scss";
 
-console.log("testando hot module replacement 1");
+console.log("testando hot module replacement 9");
 
 /* Navbar */
 function classToggle() {
@@ -22,9 +22,8 @@ if (module.hot) {
   module.hot.accept("./App.scss");
 }
 
-/* Snipet for Hot Module Replacement Plugin works with Style.scss or so */
+/* Snippet for Hot Module Replacement Plugin works with Style.scss or so */
 
-/*
 if (module.hot) {
   const hotEmitter = require("webpack/hot/emitter");
   const DEAD_CSS_TIMEOUT = 2000;
@@ -41,4 +40,4 @@ if (module.hot) {
       }, DEAD_CSS_TIMEOUT);
     });
   });
-}*/
+}

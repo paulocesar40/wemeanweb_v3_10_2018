@@ -64,6 +64,12 @@
       padding: 0 8px;
     }
 
+    // &__Link > a {
+    //   //background-color: yellow;
+    //   color: #fff;
+    //   text-decoration: none;
+    // }
+
     &__Link:hover {
       //margin: 4px;
       padding: 0 8px;
@@ -80,5 +86,24 @@
     &__Link-toggle {
       display: none;
     }
+  }
+}
+.primary-nav {
+
+
+  &--pull-right {
+    float: right;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    //@mixin clearfix;
+  }
+
+  
+  li {
+    list-style: none;
+    float: left;
   }
 }
