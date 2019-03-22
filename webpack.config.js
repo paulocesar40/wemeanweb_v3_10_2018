@@ -1,26 +1,20 @@
+const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
-const webpack = require("webpack");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const TransferWebpackPlugin = require("transfer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-//const ExtractTextPlugin = require("extract-text-webpack-plugin");
-//const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: {
-    app: [
-      //'webpack/hot/only-dev-server',
-      "tether",
-      "font-awesome/scss/font-awesome.scss",
-      "./src/app.js"
-    ],
+    app: "./src/index.js",
     vendor: "./src/vendor.js"
   },
+
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "[name].bundle.js"
+    filename: "[name].[hash].js"
   },
   devServer: {
     contentBase: "./dist",
@@ -102,11 +96,6 @@ module.exports = {
             }*/
         ]
       },
-      // font-awesome
-      {
-        test: /font-awesome\.config\.js/,
-        use: [{ loader: "style-loader" }, { loader: "font-awesome-loader" }]
-      },
       // Bootstrap 4
       {
         test: /bootstrap\/dist\/js\/umd\//,
@@ -119,11 +108,6 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery",
-      tether: "tether",
-      Tether: "tether",
-      "window.Tether": "tether",
-      Popper: ["popper.js", "default"],
-      "window.Tether": "tether",
       Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
       Button: "exports-loader?Button!bootstrap/js/dist/button",
       Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
@@ -139,7 +123,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "[name].css",
+      filename: "[name].[hash].css",
       chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
@@ -150,8 +134,6 @@ module.exports = {
       filename: "index.html",
       template: "src/index.html"
     }),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
     new BrowserSyncPlugin(
       {
         // browse to http://localhost:3000/ during development,
@@ -176,6 +158,8 @@ module.exports = {
         reload: true
       }
     ),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
     new CleanWebpackPlugin(["dist"])
   ]
 };
