@@ -8,7 +8,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    app: "./src/index.js",
+    app: "./src/app.js",
     vendor: "./src/vendor.js"
   },
 
@@ -108,6 +108,8 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery",
+      Popper: ["popper.js", "default"],
+      "window.Tether": "tether",
       Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
       Button: "exports-loader?Button!bootstrap/js/dist/button",
       Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
