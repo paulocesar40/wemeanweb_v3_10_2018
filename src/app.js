@@ -2,6 +2,10 @@ import "jquery";
 import "bootstrap";
 //import 'bootstrap-validator';
 
+// TODO: Hot module replacement is not working properly
+// ! this is very important to look for
+// ? Maybe it is disable
+
 // Add Font Awesome 5
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
